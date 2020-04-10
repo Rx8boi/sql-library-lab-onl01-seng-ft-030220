@@ -37,5 +37,5 @@ def select_character_names_and_number_of_books_they_are_in
   INNER JOIN characters
   ON characters.id = character_books.character_id
   GROUP BY character.name
-  ORDER BY character_books.book_id DES"
+  ORDER BY character_books.book_id DESC"
 end
